@@ -43,7 +43,7 @@ jobs:
           pip install zensical
           pip install mkdocs-material
 
-      - run: zensical build --site-dir public
+      - run: zensical build
 
       - uses: actions/upload-pages-artifact@v3
         with:

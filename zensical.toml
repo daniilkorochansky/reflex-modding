@@ -10,6 +10,8 @@ repo_url = "https://github.com/daniilkorochansky/reflex-modding"
 repo_name = "daniilkorochansky/reflex-modding"
 edit_uri = "edit/main/docs/"
 
+site_dir = "public"
+
 nav = [
   { "Introduction" = "index.md" },
   { "Tools" = [
