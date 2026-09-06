@@ -32,7 +32,6 @@ jobs:
       - name: Install Zensical
         run: |
           pip install zensical
-          # Если вы используете тему material, плагины иконок или таблиц, допишите их сюда:
           pip install mkdocs-material
 
       - name: Build static site
