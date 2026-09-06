@@ -1,0 +1,20 @@
+name: Fix an Error
+description: Report an inaccuracy, broken link, or typo in the text.
+title: "[Correction]: "
+labels: ["error", "documentation"]
+body:
+  - type: textarea
+    id: error-location
+    attributes:
+      label: Where is the error?
+      description: Mention the page or paste the link.
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-details
+    attributes:
+      label: What's wrong and how to fix?
+      description: Describe the mistake and provide the correct text.
+    validations:
+      required: true
