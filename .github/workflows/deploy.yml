@@ -29,6 +29,7 @@ jobs:
         with:
           python-version: 3.x
           cache: 'pip'
+          cache-dependency-path: '**/zensical.toml'
 
       - name: Zensical build cache
         uses: actions/cache@v4
