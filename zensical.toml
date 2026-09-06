@@ -111,7 +111,7 @@ toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
 
 # [[project.extra.social]]
-# icon = "fontawesome/brands/github"
+# icon = "fontawesome/brands/github"  
 # link = "https://github.com/user/repo"
 
 # [[project.extra.social]]
