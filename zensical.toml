@@ -48,11 +48,11 @@ nav = [
 ]
 
 # extra_css = ["stylesheets/custom.css"] 
-# extra_javascript = ["javascripts/custom.js"] 
+extra_javascript = ["javascripts/metric.js"] 
 
 [project.theme]
 # variant = "classic"
-custom_dir = "docs/overrides"
+# custom_dir = "docs/overrides"
 favicon = "images/favicon.png"
 language = "en"
 features = [
