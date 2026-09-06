@@ -1,0 +1,20 @@
+name: Update Existing Page
+description: If there is already an article on the website, but you want to expand it with new details or missing parameters..
+title: "[Update]: "
+labels: ["documentation", "enhancement"]
+body:
+  - type: textarea
+    id: page-to-update
+    attributes:
+      label: Which page needs an update?
+      description: Mention the page or paste the link.
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra-details
+    attributes:
+      label: What needs to be added?
+      description: Provide the missing details or data here.
+    validations:
+      required: true
