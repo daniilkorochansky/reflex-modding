@@ -1,0 +1,151 @@
+[project]
+site_url = "https://daniilkorochansky.github.io/reflex-modding/"
+site_name = "Reflex Modding"
+site_description = "Documentation for modifying the game MX vs ATV Reflex"
+site_author = "Daniil Korochansky"
+
+copyright = "Copyright &copy; 2026 Daniil Korochansky. Licensed under CC-BY-4.0"
+
+repo_url = "https://github.com/daniilkorochansky/reflex-modding"
+repo_name = "daniilkorochansky/reflex-modding"
+edit_uri = "edit/main/docs/"
+
+nav = [
+  { "Introduction" = "index.md" },
+  { "Tools" = [
+    { "Reflex Package Tool" = "tools/reflex-package-tool.md"},
+    { "Reflex BXML Editor" = "tools/reflex-bxml-editor.md"},
+    { "Reflex Font Package Viewer" = "tools/reflex-font-package-viewer.md"},
+    { "Digital Earthworks" = "tools/digital-earthworks.md"},
+  ] },
+  { "Track Making" = [
+    { "Introduction" = "track-making/introduction.md" },
+  ]},
+  { "UI Logic Scripting" = [
+    { "Introduction" = "ui-logic-scripting/introduction.md" },
+  ]},
+   { "Game Files" = [
+    { "Packages (.package)" = [
+      { "Structure of the package" = "game-files/packages/package-structure.md" },
+      { "List of packages" = "game-files/packages/list-of-packages.md" },
+      { "Resources" = [
+        { "Textures (.texture)" = "game-files/packages/resources/textures.md" },
+        { "Videos (.bink)" = "game-files/packages/resources/videos.md" },
+        { "Scripts (.script)" = "game-files/packages/resources/scripts.md" },
+        { "Localizations (.localiz)" = "game-files/packages/resources/localizations.md" },
+      ] },
+    ] },
+    { "BXML configurations (.bxml)" = "game-files/bxml-configurations.md" },
+    { "Font Packages (.fpack)" = "game-files/font-packages.md" },
+  ]},
+  { "References" = [
+    { "Lua API" = [
+      { "Events" = "references/lua-api/events.md" },
+    ] },
+  ] }
+]
+
+# extra_css = ["stylesheets/custom.css"] 
+# extra_javascript = ["javascripts/custom.js"] 
+
+[project.theme]
+# variant = "classic"
+# custom_dir = "overrides"
+favicon = "images/favicon.png"
+language = "en"
+features = [
+  "announce.dismiss",
+  "content.action.edit",
+  # "content.action.view",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  # "header.autohide",
+  # "navigation.expand",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  # "navigation.instant.progress",
+  "navigation.path",
+  # "navigation.prune",
+  "navigation.sections",
+  # "navigation.tabs",
+  # "navigation.tabs.sticky",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  # "toc.follow",
+  # "toc.integrate",
+]
+
+logo = "images/logo.png"
+
+# [project.theme.icon]
+# logo = "lucide/smile"
+
+# [project.theme.font]
+# text = "Inter"
+# code = "Jetbrains Mono" 
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+# [[project.extra.social]]
+# icon = "fontawesome/brands/github"
+# link = "https://github.com/user/repo"
+
+# [[project.extra.social]]
+# icon = "fontawesome/brands/mastodon"
+# link = "https://fosstodon.org/@user"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+toc.permalink = true
+pymdownx.arithmatex.generic = true
+pymdownx.betterem = {}
+pymdownx.caret = {}
+pymdownx.details = {}
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.magiclink = {}
+pymdownx.mark = {}
+pymdownx.smartsymbols = {}
+# pymdownx.snippets.base_path = "includes"
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
+pymdownx.tabbed.combine_header_slug = true
+pymdownx.tasklist.custom_checkbox = true
+pymdownx.tilde = {}
+
+[project.extra]
+generator = false
