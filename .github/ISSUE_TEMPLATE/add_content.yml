@@ -12,7 +12,7 @@ body:
     id: guide_title
     attributes:
       label: "Page title/section"
-      description: "What should your page/section be called in the website menu?"
+      description: "What should your page/section be called in the website?"
       placeholder: "Enter the title/section..."
     validations:
       required: true
