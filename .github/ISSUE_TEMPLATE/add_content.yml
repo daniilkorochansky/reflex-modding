@@ -39,7 +39,7 @@ body:
     validations:
       required: true
 
-    - type: textarea
+  - type: textarea
     id: guide_content
     attributes:
       label: "Content text"
@@ -48,7 +48,7 @@ body:
     validations:
       required: true
 
-    - type: textarea
+  - type: textarea
     id: additional_notes
     attributes:
       label: "Additional notes"
