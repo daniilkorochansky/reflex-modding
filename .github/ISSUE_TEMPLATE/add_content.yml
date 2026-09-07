@@ -1,0 +1,68 @@
+name: "➕ Add new content"
+description: "Add a new page/section to the documentation."
+title: "[Add content]: "
+labels: ["enhancement", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for deciding to share your knowledge with the community! Fill out this simple form, and we will format your material as a new page/section on the website.
+
+  - type: input
+    id: guide_title
+    attributes:
+      label: "Page title/section"
+      description: "What should your page/section be called in the website?"
+      placeholder: "Enter the title/section..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: menu_category
+    attributes:
+      label: "Select category"
+      description: "Select an existing category in the left menu of the website that best suits your material."
+      options:
+        - "Tools"
+        - "Tools -> Digital Earthworks"
+        - "Track Making"
+        - "Track Making -> Introduction"
+        - "UI Logic Scripting"
+        - "UI Logic Scripting -> Introduction"
+        - "Game Files"
+        - "Game Files -> Packages (.package)"
+        - "Game Files -> Packages (.package) -> Structure of the package"
+        - "Game Files -> Packages (.package) -> List of packages"
+        - "Game Files -> Packages (.package) -> Resources"
+        - "References"
+        - "References -> Lua API"
+    validations:
+      required: true
+
+  - type: textarea
+    id: guide_content
+    attributes:
+      label: "Content text"
+      description: "Write the entire text of your instructions here. You can use plain text, attach screenshots (simply drag them here with your mouse), or use Markdown markup."
+      placeholder: "Place your text here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: "Additional notes"
+      description: "Here you can indicate your preferences (for example, links to your social media accounts for attribution or leave a comment for the documentation editor)."
+      placeholder: "For example: Please create a subcategory ... in “Track Making” and place a page in it."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: final_checks
+    attributes:
+      label: "Additional"
+      options:
+        - label: "This material is a new section (check if a new page is not required)?"
+          required: false
+        - label: "This material has been personally tested by me in the game and does not disrupt its stability."
+          required: true
