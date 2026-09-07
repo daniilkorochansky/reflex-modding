@@ -1,4 +1,4 @@
-name: Update existing page
+name: ✏️ Update existing page
 description: If there is already an article on the website, but you want to expand it with new details or missing parameters..
 title: "[Update]: "
 labels: ["documentation", "enhancement"]
