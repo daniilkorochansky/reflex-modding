@@ -1,0 +1,15 @@
+/* Акцентный цвет для светлой темы */
+:root, [data-md-color-scheme="default"] {
+  --md-accent-fg-color: #E53935;                      /* Основной красный (HEX) */
+  --md-accent-fg-color--transparent: rgba(211, 47, 47, 0.1); /* Тот же цвет, но с прозрачностью 10% */
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--transparent: rgba(255, 255, 255, 0.1);
+}
+
+/* Акцентный цвет для тёмной темы */
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #E53935;                      /* Чуть более яркий красный для контраста на тёмном фоне */
+  --md-accent-fg-color--transparent: rgba(255, 82, 82, 0.1);  /* Тот же цвет с прозрачностью 10% */
+  --md-accent-bg-color: #1e1e1e;
+  --md-accent-bg-color--transparent: rgba(30, 30, 30, 0.1);
+}
