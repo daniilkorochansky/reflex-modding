@@ -62,5 +62,7 @@ body:
     attributes:
       label: "Additional"
       options:
+        - label: "This material is a new section (check if a new page is not required)?"
+          required: false
         - label: "This material has been personally tested by me in the game and does not disrupt its stability."
           required: true
