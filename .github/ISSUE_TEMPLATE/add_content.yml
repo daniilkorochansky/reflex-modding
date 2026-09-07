@@ -1,0 +1,49 @@
+name: "➕ Add new content"
+description: "Add a new page to the documentation."
+title: "[Add content]: "
+labels: ["enhancement", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for deciding to share your knowledge with the community! Fill out this simple form, and we will format your material as a new page on the website.
+
+  - type: input
+    id: guide_title
+    attributes:
+      label: "Page title"
+      description: "What should your page be called in the website menu?"
+      placeholder: "Enter the title..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: menu_category
+    attributes:
+      label: "Select category"
+      description: "Select an existing category in the left menu of the website that best suits your material."
+      options:
+        - "Tools"
+        - "Track Making"
+        - "UI Logic Scripting"
+        - "Game Files"
+        - "References"
+    validations:
+      required: true
+
+  - type: textarea
+    id: guide_content
+    attributes:
+      label: "Content text"
+      description: "Write the entire text of your instructions here. You can use plain text, attach screenshots (simply drag them here with your mouse), or use Markdown markup."
+      placeholder: "Place your text here..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: final_checks
+    attributes:
+      label: "Additional"
+      options:
+        - label: "This material has been personally tested by me in the game and does not disrupt its stability."
+          required: true
