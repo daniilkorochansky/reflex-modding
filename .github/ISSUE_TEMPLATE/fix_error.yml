@@ -1,4 +1,4 @@
-name: Fix an error
+name: ✏️ Fix an error
 description: Report an inaccuracy, broken link, or typo in the text.
 title: "[Correction]: "
 labels: ["error", "documentation"]
