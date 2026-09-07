@@ -1,27 +1,14 @@
 {% extends "base.html" %}
 
-{% block libs %}
+{% block analytics %}
   {{ super() }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KM1BE2VB0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();
-     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-     k=e.createElement(t),a=e.getElementsByTagName(t),k.async=1,k.src=r;
-     
-     // Вместо insertBefore жестко и без ошибок вшиваем скрипт в head
-     document.head.appendChild(k);
-     })
-     (window, document, "script", "https://yandex.ru", "ym");
-
-     ym(112328110, "init", {
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true,
-          webvisor:false
-     });
-  </script>
-  <noscript><div><img src="https://yandex.ru" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
+  gtag('config', 'G-0KM1BE2VB0');
+</script>
 {% endblock %}
